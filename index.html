@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AI Voice Chat</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Training | Coffee Machine Pro</title>
     <meta http-equiv="Permissions-Policy" content="microphone=(self)">
-</head>
-<body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #111;">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFE360; /* Your Brand Yellow */
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
 
-    <header>An Instructional Designers worst nightmare</header>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-panel {
+            flex: 1;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.2); /* Soft overlay to keep yellow visible */
+        }
+
+        .widget-panel {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 2px solid rgba(0,0,0,0.05);
+        }
+
+        h1 { color: #333; font-size: 2.5rem; margin-bottom: 20px; }
+        p { color: #444; font-size: 1.1rem; line-height: 1.6; max-width: 600px; }
+        .highlight { font-weight: bold; color: #000; }
+
+        /* Responsive tweak for mobile */
+        @media (max-width: 800px) {
+            body { flex-direction: column; overflow: auto; }
+            .text-panel { padding: 30px; }
+            .widget-panel { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-panel">
+            <h1>Sales Director Briefing</h1>
             <p>Welcome to the Coffee Machine Sales Simulator.</p>
             <p>
                 Our sales numbers are currently <span class="highlight">stagnant and declining</span>. 
@@ -22,9 +70,12 @@
                 Click the button on the right to start the conversation.
             </p>
         </div>
-    
-    <elevenlabs-convai agent-id="agent_6601kjeghw7qene9zhwpermv35q8"></elevenlabs-convai>
-    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+        <div class="widget-panel">
+            <elevenlabs-convai agent-id="agent_6601kjeghw7qene9zhwpermv35q8"></elevenlabs-convai>
+            <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+        </div>
+    </div>
 
 </body>
 </html>
