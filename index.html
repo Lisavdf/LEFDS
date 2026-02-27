@@ -6,44 +6,45 @@
     <title>Sales Director Briefing</title>
     <meta http-equiv="Permissions-Policy" content="microphone=(self)">
 </head>
-<body style="margin: 0; padding: 0; background-color: #1a1a1a !important; color: #ffffff !important; font-family: 'Helvetica Neue', Arial, sans-serif; height: 100vh; width: 100vw; overflow: hidden;">
+<body style="margin: 0; padding: 0; background-color: #1a1a1a !important; color: #ffffff !important; font-family: 'Helvetica Neue', Arial, sans-serif; height: 100vh; width: 100vw; overflow: hidden; display: flex; flex-direction: column;">
 
-    <div style="height: 80px; width: 100%; border-bottom: 1px solid #333;">
-        <div style="padding: 25px 60px; font-size: 14px; color: #888; letter-spacing: 1px; text-transform: uppercase;">
-            AI Agent Stakeholder Interview
+    <div style="height: 70px; width: 100%; border-bottom: 1px solid #333; display: flex; align-items: center; padding: 0 60px; box-sizing: border-box;">
+        <div style="font-size: 12px; color: #888; letter-spacing: 2px; text-transform: uppercase;">
+            AI Agent: The Stakeholder Interview
         </div>
     </div>
 
-    <div style="display: flex; width: 100%; height: calc(100% - 80px);">
+    <div style="display: flex; flex: 1; width: 100%; overflow: hidden;">
         
-        <div style="flex: 1; padding: 60px; display: flex; flex-direction: column; justify-content: flex-start;">
-            <h1 style="color: #FFE360; margin-bottom: 30px; font-size: 36px; line-height: 1.2;">An Instructional Designer's Worst Nightmare</h1>
-            
-            <div style="max-width: 600px;">
-                <p style="font-size: 18px; line-height: 1.7; margin-bottom: 25px; color: #ddd;">
+        <div style="flex: 1; padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: flex-end; box-sizing: border-box;">
+            <div style="max-width: 500px; width: 100%;">
+                <h1 style="color: #FFE360; margin-bottom: 25px; font-size: 38px; line-height: 1.1;">An Instructional Designer's Worst Nightmare</h1>
+                
+                <p style="font-size: 18px; line-height: 1.6; margin-bottom: 20px; color: #cccccc;">
                     You work for a company selling coffee machines. Sales numbers have been stagnant for the past few months and have even begun to decline.
                 </p>
                 
-                <p style="font-size: 18px; line-height: 1.7; margin-bottom: 25px; color: #ddd;">
-                    The Sales Director has requested a new training program and handed you an <span style="color: #fff; font-weight: bold;">80-page PDF</span> of technical specs and conversation scripts.
+                <p style="font-size: 18px; line-height: 1.6; margin-bottom: 20px; color: #cccccc;">
+                    The Sales Director has requested a new training program and handed you an <span style="color: #ffffff; font-weight: bold; border-bottom: 1px solid #FFE360;">80-page PDF</span> of technical specs and scripts.
                 </p>
                 
-                <p style="font-size: 18px; line-height: 1.7; margin-bottom: 40px; color: #ddd;">
+                <p style="font-size: 18px; line-height: 1.6; margin-bottom: 35px; color: #cccccc;">
                     You've managed to secure a brief meeting before development begins.
                 </p>
                 
-                <div style="background-color: #333; padding: 25px; border-left: 4px solid #FFE360;">
-                    <p style="margin: 0; font-size: 18px; font-weight: bold; color: #fff;">
-                        Objective: Interview the Director. Uncover the real needs behind the request to ensure the course actually works.
+                <div style="background-color: #262626; padding: 30px; border-left: 4px solid #FFE360; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <p style="margin: 0; font-size: 19px; font-weight: bold; color: #ffffff; line-height: 1.4;">
+                        <span style="color: #FFE360;">Objective:</span> Interview the Director. Uncover the real needs behind the request.
                     </p>
                 </div>
             </div>
         </div>
 
-        <div style="flex: 1; display: flex; justify-content: center; align-items: flex-start; padding-top: 60px; background-color: #222;">
-            <div style="text-align: center;">
-                <p style="color: #888; font-size: 12px; margin-bottom: 20px; text-transform: uppercase;">Click below to start the interview</p>
+        <div style="flex: 1; display: flex; justify-content: flex-start; align-items: center; padding-left: 40px; border-left: 1px solid #2a2a2a;">
+            <div style="text-align: center; background: #262626; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 320px;">
+                <p style="color: #888; font-size: 11px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px;">Ready to begin?</p>
                 <elevenlabs-convai agent-id="agent_6601kjeghw7qene9zhwpermv35q8"></elevenlabs-convai>
+                <p style="color: #555; font-size: 12px; margin-top: 25px;">Ensure your microphone is enabled</p>
             </div>
             <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
         </div>
