@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Voice Chat</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Permissions-Policy" content="microphone=(self)">
+</head>
+<body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #111;">
+
+    <elevenlabs-convai agent-id="agent_6601kjeghw7qene9zhwpermv35q8"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+</body>
+</html>
